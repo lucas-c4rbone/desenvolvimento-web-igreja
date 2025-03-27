@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-image: linear-gradient(to right, rgb(24, 78, 154), rgb(147, 177, 252), rgb(24, 78, 154));
+    color: white;
+    text-align: center;
+    margin: 0px;
+    padding: 15px 0px;
+}
