@@ -1,14 +1,309 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Armata&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@font-face {
+    font-family: 'Strait';
+    src: url(fonts/Strait-Regular.ttf) format('truetype');
+    font-weight: normal;
+}
+
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box; /* Evita que padding/margin afetem o tamanho total */
 }
 
 header {
-    background-image: linear-gradient(to right, rgb(24, 78, 154), rgb(147, 177, 252), rgb(24, 78, 154));
+    font-family: 'Strait', Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.205);
+    background-image: linear-gradient(to right, #256187, #2498DF, #1f94dd, #29678D);
     color: white;
     text-align: center;
-    margin: 0px;
     padding: 15px 0px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.199);
 }
+
+header h1 {
+    font-weight: normal;
+    font-size: 2.3em;
+    padding-bottom: 7px;
+    
+}
+
+header p#cidade {
+    font-size: 1.3em;
+    letter-spacing: 2px;
+    padding-bottom: 5px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza os elementos */
+    gap: 15px;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    text-align: center;
+    max-width: 800px; /* Aumenta o limite da largura */
+    margin: auto;
+    padding: 20px;
+}
+
+.categoria {
+    background-color: #E1F4FF;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.178);
+    padding: 15px 12px;
+    flex: 1 1 350px; /* Permite que os elementos cresçam e se ajustem */
+    min-width: 250px;
+    text-align: center;
+}
+
+.topicos {
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.topicos div {
+    padding: 10px;
+    flex: 1 1 150px;
+    min-width: 120px;
+}
+
+.topicos div {
+    background-color: #B3E5FC;
+    padding: 15px;
+    flex: 1 1 150px;
+    min-width: 120px;
+    border-radius: 8px; /* Apenas para um visual melhor */
+}
+
+.topicos a {
+    display: block; /* Faz com que o link ocupe toda a área da div */
+    text-decoration: none; /* Remove o sublinhado padrão do link */
+    color: inherit; /* Mantém a cor do texto sem mudar para azul */
+}
+
+
+
+.topicos a {
+    text-decoration: none;
+}
+
+.topicos a {
+    display: flex; /* Faz com que o link se comporte como flexível */
+    align-items: center; /* Centraliza o conteúdo dentro */
+    justify-content: center; /* Centraliza o texto */
+    width: 100%; /* Garante que o link ocupe toda a div */
+    height: 100%;
+}
+
+.topicos > a > div#pregacoes {
+    background-color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.151);
+    margin: 10px;
+    padding: 20px 70px 180px 70px;
+    transition-duration: 250ms;
+}
+.topicos > a > div#pregacoes:hover {
+    background-color: rgb(243, 243, 243);
+    transform: scale(0.95);
+    transition-duration: 250ms;
+}
+
+
+.topicos > a >div#hinos {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.151);
+    margin: 10px;
+    padding: 20px 70px 180px 70px;
+    transition-duration: 250ms;
+}
+
+.topicos > a >div#hinos:hover {
+    background-color: rgb(243, 243, 243);
+    transform: scale(0.95);
+    transition-duration: 250ms;
+}
+
+.topicos > a >div#eventos {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.151);
+    margin: 10px;
+    padding: 20px 70px 180px 70px;
+    transition-duration: 250ms;
+}
+
+.topicos > a > div#eventos:hover {
+    background-color: rgb(243, 243, 243);
+    transform: scale(0.95);
+    transition-duration: 250ms;
+}
+
+.topicos > a >div#horariosdecultos {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.151);
+    margin: 10px;
+    padding: 20px 70px 180px 70px;
+    transition-duration: 250ms;
+}
+.topicos > a > div#horariosdecultos:hover {
+    background-color: rgb(243, 243, 243);
+    transform: scale(0.95);
+    transition-duration: 250ms;
+}
+
+.topicos > a >div#localizacao {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.151);
+    margin: 10px;
+    padding: 20px 70px 180px 70px;
+    transition-duration: 250ms;
+}
+
+.topicos > a > div#localizacao:hover {
+    background-color: rgb(243, 243, 243);
+    transform: scale(0.95);
+    transition-duration: 250ms;
+}
+
+footer {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    outline-width: 1px;
+    outline-style: solid;
+    outline-color: rgb(192, 192, 192);
+    margin-top: 20px;
+    padding: 30px;
+}
+
+footer p {
+    padding: 6px;
+}
+
+footer p#endereco {
+    margin-bottom: 24px;
+}
+
+footer a {
+    text-decoration: none;
+    background-color: #D6E8FC;
+    color: #4789D5;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 200ms;
+}
+
+footer a:hover {
+    background-color: #d8eaff;
+    color: #86b3e7;
+    transition: 200ms;
+}
+
+.modal {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    display: none; 
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* Estilo da caixa do modal */
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 430px;
+    text-align: center;
+    position: relative; /* Permite posicionar o botão X dentro */
+}
+
+.modal-content h2 {
+    margin-bottom: 30px;
+}
+
+.modal-content p#espacamento {
+    margin-bottom: 15px;
+}
+
+/* Estilo do botão X */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.close:hover {
+    color: red;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo da caixa do modal */
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+    position: relative; /* Permite posicionar o botão X dentro */
+}
+
+/* Estilo do botão X */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.close:hover {
+    color: red;
+}
+
+.modal-content > p#telefone {
+    background-color: green;
+    color: rgb(155, 231, 155);
+    margin: auto;
+    width: 310px;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+.modal-content > p#email {
+    background-color: #D6E8FC;
+    color: #4789D5;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
