@@ -105,7 +105,7 @@ main {
     border-radius: 10px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.151);
     margin: 10px;
-    padding: 20px 70px 180px 70px;
+    padding: 30px 70px 40px 70px;
     transition-duration: 250ms;
 }
 .topicos > a > div#pregacoes:hover {
@@ -120,7 +120,7 @@ main {
     border-radius: 10px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.151);
     margin: 10px;
-    padding: 20px 70px 180px 70px;
+    padding: 40px 70px 70px 70px;
     transition-duration: 250ms;
 }
 
@@ -129,13 +129,12 @@ main {
     transform: scale(0.95);
     transition-duration: 250ms;
 }
-
 .topicos > a >div#eventos {
     background-color: white;
     border-radius: 10px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.151);
+    padding: 50px 70px 80px 70px;
     margin: 10px;
-    padding: 20px 70px 180px 70px;
     transition-duration: 250ms;
 }
 
@@ -150,7 +149,7 @@ main {
     border-radius: 10px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.151);
     margin: 10px;
-    padding: 20px 70px 180px 70px;
+    padding: 20px 70px 53px 70px;
     transition-duration: 250ms;
 }
 .topicos > a > div#horariosdecultos:hover {
@@ -164,7 +163,7 @@ main {
     border-radius: 10px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.151);
     margin: 10px;
-    padding: 20px 70px 180px 70px;
+    padding: 50px 70px 72px 70px;
     transition-duration: 250ms;
 }
 
@@ -237,7 +236,7 @@ footer a:hover {
     margin-bottom: 30px;
 }
 
-.modal-content p#espacamento {
+.modal-content .espacamento {
     margin-bottom: 15px;
 }
 
@@ -271,7 +270,7 @@ footer a:hover {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
-    width: 350px;
+    width: 420px;
     text-align: center;
     position: relative; /* Permite posicionar o botão X dentro */
 }
@@ -288,14 +287,23 @@ footer a:hover {
     color: red;
 }
 
-.modal-content > p#telefone {
-    background-color: green;
+.modal-content > a {
+    text-decoration: none;
+}
+
+.modal-content > a > p#telefone {
+    background-image: linear-gradient(to bottom, rgb(0, 82, 0), rgb(52, 161, 52));
     color: rgb(155, 231, 155);
     margin: auto;
     width: 310px;
     padding: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
     border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.267);
+}
+
+.modal-content > a > p#telefone:hover {
+    background-image: linear-gradient(to bottom, rgb(52, 161, 52), rgb(0, 82, 0));
 }
 
 .modal-content > p#email {
@@ -305,5 +313,6 @@ footer a:hover {
     padding: 10px;
     margin-bottom: 5px;
     border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.137);
 }
 
