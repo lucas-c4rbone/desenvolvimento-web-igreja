@@ -72,7 +72,7 @@ main {
 }
 
 .topicos div {
-    background-color: #B3E5FC;
+    background-color: #b3e1fc;
     padding: 15px;
     flex: 1 1 150px;
     min-width: 120px;
@@ -300,10 +300,12 @@ footer a:hover {
     margin-bottom: 20px;
     border-radius: 10px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.267);
+    transition-duration: 0.15s;
 }
 
 .modal-content > a > p#telefone:hover {
-    background-image: linear-gradient(to bottom, rgb(52, 161, 52), rgb(0, 82, 0));
+    opacity: 0.9;
+    transition-duration: 0.25s;
 }
 
 .modal-content > p#email {
